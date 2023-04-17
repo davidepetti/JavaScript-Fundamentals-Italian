@@ -1,0 +1,29 @@
+# Cosa sono i programmi?
+
+I programmi sono file di testo scritti dagli esseri umani. Dicono ai computer cosa fare! Molto spesso il testo che scriviamo nei programmi viene chiamato **codice**. Le persone che scrivono programmi sono indicate come **programmatori**. 👨‍💻👩‍💻
+
+I programmi sono scritti in un _linguaggio_ di programmazione progettato per essere leggibile dall'uomo. In questo modo molti programmatori possono lavorare sullo stesso codice con una comprensione comune di ciò che si sta cercando di realizzare!
+
+Quando un programma è pronto per essere eseguito da una macchina, viene letto riga per riga da un **compilatore** o da un **interprete**. Entrambi questi strumenti tradurranno il codice in istruzioni che una macchina può eseguire.
+
+# Parsing
+
+Ogni riga di un programma viene **analizzata** per determinarne il significato per la macchina. Questo viene fatto suddividendo ogni **istruzione** in **token**. Ad esempio, potremmo avere una dichiarazione:
+
+```js
+const a = 4;
+```
+
+Questa istruzione è suddivisa nei singoli **token**: `const`, `a`, `=` e `4`.
+
+Questi token hanno un significato particolare per la macchina a seconda della [sintassi](https://en.wikipedia.org/wiki/Syntax). I _linguaggi_ di programmazione definiscono la sintassi. Uno di questi linguaggi di programmazione è **JavaScript**. Usando la sintassi JavaScript, il compilatore assegna una serie di regole per determinare il significato dei suddetti token.
+
+Vedrà la parola chiave `const` e saprà che sta dichiarando una variabile chiamata `a`. Riconoscerà `=` come operatore di assegnazione. Infine, determinerà che `4` è il valore da memorizzare all'interno della variabile `a`.
+
+Un compilatore leggerà ogni istruzione nel tuo programma, `analizzandola`. Alla fine forma una struttura dati simile ad un albero per rappresentare il tuo programma. Da questa struttura dati creerà una serie di istruzioni macchina che possono essere eseguite direttamente.
+
+> In alcuni linguaggi, la compilazione crea codice macchina che viene distribuito ai server. Per JavaScript, la compilazione avviene microsecondi prima dell'esecuzione. Si parla di [Just-in-Time Compilation](https://en.wikipedia.org/wiki/Just-in-time_compilation).
+
+Uff! 😅
+
+Non preoccuparti se parte di ciò ti ha reso confuso! Per ora è sufficiente introdurre questi concetti. Approfondiremo ulteriori dettagli nelle future lezioni. Esploreremo la sintassi JavaScript un passo alla volta scrivendo programmi nelle prossime lezioni.
