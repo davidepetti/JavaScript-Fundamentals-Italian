@@ -1,0 +1,87 @@
+# Funzioni
+
+Una funzione è **codice riutilizzabile**!
+
+Un aspetto importante delle funzioni è la capacità di **restituire** un output. Diamo un'occhiata da vicino.
+
+```js
+function getNumber() {
+  return 4;
+}
+```
+
+In questo caso, il numero `4` viene sempre restituito quando **chiamiamo** `getNumber`. Chiamare la funzione sarebbe simile a questo:
+
+```js
+const num = getNumber();
+```
+
+Il valore `4` verrebbe ora memorizzato nella nostra variabile `num`!
+
+> 🔍 Esplora la sintassi delle funzioni più in [dettaglio](https://university.alchemy.com/course/js/sc/5d7d8df209d5ed335cbf0912/stage/5d7d8e6709d5ed335cbf0913?tab=details).
+
+# 🏁 Il tuo obiettivo: restituire una stringa da getMessage
+
+1\. Nella funzione getMessage restituisci una stringa. Può essere qualsiasi stringa tu scelga!
+
+2\. Dopo averlo fatto, fai clic su "Run Tests" o premi il tasto `Invio` per andare avanti!
+
+# Sintassi delle funzioni
+
+Analizziamo un po' la sintassi delle funzioni!
+
+# Chiamare una funzione
+
+Vedrai il termine _chiamata_ usato con le funzioni. Cosa significa? **Chiamata** significa _eseguire_ la funzione. Spesso quando chiami una funzione, passerai valori di input specifici.
+
+> 📖 Potresti anche vedere la parola **invocare**. Questi termini significano la stessa cosa, puoi _chiamare una funzione_ o puoi _invocare una funzione_.
+
+Che aspetto ha la chiamata di una funzione?
+
+```js
+const output = addOne(2);
+```
+
+Qui `addOne` è la nostra funzione. Stiamo usando le **parentesi** dopo addOne per chiamare la funzione. Stiamo passando il valore `2` come input nella nostra funzione `addOne`.
+
+Le funzioni non devono per froza avere valori di input, considera la nostra funzione `getMessage`:
+
+```js
+const message = getMessage();
+```
+
+In questo caso, stiamo solo usando le parentesi per chiamare la funzione. Non stiamo passando alcun valore di input a questa funzione.
+
+# Dichiarazione di funzione
+
+Per chiamare una funzione, dobbiamo prima dichiararla!
+
+```js
+function addOne(input) {
+  return input + 1;
+}
+```
+
+In questo esempio stiamo creando una funzione chiamata `addOne` che accetta un input chiamato `input`. Stiamo **restituendo** l'input più uno.
+
+```js
+function getMessage() {
+  return 'Hello World!';
+}
+```
+
+Questa funzione `getMessage` non accetta input. Stiamo semplicemente restituendo una stringa, dicendo `"Hello World!"`.
+
+# Istruzione return
+
+La parola chiave `return` all'interno di una funzione restituirà l'output desiderato della tua funzione. Questo valore verrà restituito al punto in cui viene chiamata la funzione.
+
+Ad esempio, se hai la seguente istruzione:
+
+```js
+const a = addOne(1);
+```
+
+La variabile `a` è ora assegnata al valore restituito della funzione `addOne` richiamata con un input di `1`, che restituisce `2`.
+
+> 📖 Potresti vedere il termine **dichiarare** una funzione. Questo è sinonimo di **definizione** di una funzione. Significa che stiamo creando una funzione. Una volta creata, potremo chiamarla altrove nel nostro programma!
